@@ -1,0 +1,265 @@
+/* 
+COLOR PALETTE
+
+Stromboli #2e5e4e
+Bon Jour  #dbd3d8
+Cascade   #93a7aa
+Hit Gray  #a7b5b9
+*/
+
+/* 
+GLOBAL STYLES
+*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*set default value to 10px*/
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+html, body  {
+    height: 100%;
+}
+
+body {
+    background: rgb(255 255 255 / 0.9);
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+h1, h2, h3 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+  }
+h1 {
+    font-size: 7rem;
+    line-height: 0.85;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+
+  
+/* LINKS */
+a {
+    color: #2e5e4e;
+    font-size: 1.1em;
+}
+a:hover {
+    color: #a7b5b9;
+    text-decoration: none;
+}
+
+footer a {
+    color: #dbd3d8;
+}
+footer a:hover {
+    color: #83b8a6;
+}
+.btn {
+    background: #2e5e4e;
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    border-radius: 4px;
+}
+
+.content-wrapper{
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 30px;
+
+}
+
+/* 
+HOME STYLES
+*/
+.home {
+    background: url(../images/bg-home-office-studio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+.content-bg {
+    background: rgb(255 255 255 / 0.9);
+    padding: 30px;
+}
+@media screen and (max-width:650px) {
+    .home .content-wrapper{
+        padding: 10px;
+    }
+    .content-bg{
+        padding: 20px;
+    }
+}
+
+/* 
+RESUME STYLES
+*/
+.resume header::before{
+    background: url(../images/bg-home-office-studio.jpg);
+    background-size: cover;
+    background-position: center;
+    content: "";
+    display: block;
+    height: 400px;
+}
+
+.resume-section {
+    margin-bottom: 50px;
+}
+
+.resume-section h2 {
+    border-bottom: 2px dashed #2e5e4e;
+}
+
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-size: 1.5rem;
+}
+@media screen and (max-width:1200px) {
+    .download-link{
+        position: absolute;
+    }
+}
+@media screen and (max-width:500px) {
+    .resume header::before{
+        height: 200px;
+    }
+    h1{
+        font-size: 4.5rem;
+    }
+    h2{
+        font-size: 2.4rem;
+    }
+}
+
+/* PROJECTS */
+.project-item {
+    margin: 30px 0px;
+}
+
+.project-item img {
+    width: 300px;
+}
+@media screen and (min-width:860px) {
+    .project-item {
+        display: flow-root;
+    }
+    
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width:650px) and (max-width:859px) {
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .project-item img {
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .project-item img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* WORK EXPERIENCES */
+.work-item {
+
+    margin: 30px 0;
+}
+.work-details p{
+    margin: 0;
+
+}
+
+@media screen and (min-width:860px) {
+    .work-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .work-summary p:first-child{
+        margin-top: 0;
+    }
+}
+
+/* EDUCATION */
+.education-item {
+    margin: 30px 0;
+}
+.education-item p{
+    margin: 0;
+}
+/* 
+FOOTER STYLES
+*/
+
+footer {
+    background: #2e5e4e;
+    color: #dbd3d8;
+
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+.socials li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.socials img {
+    width: 32px;
+    transition: .2s;
+}
+
+.socials img:hover {
+    opacity: 70%;
+    transform: scale(1.3);
+}
+@media screen and (min-width:860px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    } 
+}
+@media screen and (max-width:859px) {
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}

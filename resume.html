@@ -1,80 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio | Asith Hewadewage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
   </head>
   <body class="resume">
     <a class="btn download-link" href="Asith Hewadewage - Resume.pdf">Download PDF</a>
+
     <!-- //  INTRO  // -->
     <header>
-      
       <div class="content-wrapper">
         <h1>Asith Hewadewage</h1>
         <h2>IT Business Analyst | Based in Australia</h2>
       </div>
-      
     </header>
+
+    <!-- ======= HERO / BANNER ======= -->
+    <section class="hero">
+      <div class="hero-inner content-wrapper">
+        <h2 class="hero-title">Business Analysis, Done Clearly</h2>
+        <p class="hero-subtitle">
+          Requirements, process maps, Jira/Confluence documentation — all in one place.
+          Scroll to view inline samples (no extra clicks).
+        </p>
+        <div class="hero-cta">
+          <a class="btn" href="#deliverables">View Deliverables</a>
+          <a class="btn btn-secondary" href="#profile">About Me</a>
+        </div>
+      </div>
+    </section>
 
     <main class="content-wrapper">
       <!-- //  PROFILE  // -->
-      <section class="resume-section">
-        
+      <section class="resume-section" id="profile">
         <h2>Profile</h2>
         <p>
-        <li>I’m a Bachelor of Science graduate with strong skills in Business Process Analysis and Optimisation, Requirements Gathering, Functional Documentation, and ERP Implementation.</li>
-        <li>Skilled in stakeholder engagement, process mapping with BPMN, Visio, and Bizagi Modeller, and preparing SRS and FRD documents using Confluence and Jira to support ERP and Development projects.</li>
-        <li>Completed key projects including “ERP System Implementation” which involved introducing and implementing a company-wide ERP system by following a defined roadmap, from requirements gathering to system rollout and “Lean Manufacturing Process Optimisation (Six Sigma)” which included analysing and enhancing existing manufacturing processes using Six Sigma methodology to improve operational efficiency, quality across divisions and process optimisation.
-        </li>
+          <li>I’m a Bachelor of Science graduate with strong skills in Business Process Analysis and Optimisation, Requirements Gathering, Functional Documentation, and ERP Implementation.</li>
+          <li>Skilled in stakeholder engagement, process mapping with BPMN, Visio, and Bizagi Modeller, and preparing SRS and FRD documents using Confluence and Jira to support ERP and Development projects.</li>
+          <li>Completed key projects including “ERP System Implementation” which involved introducing and implementing a company-wide ERP system by following a defined roadmap, from requirements gathering to system rollout and “Lean Manufacturing Process Optimisation (Six Sigma)” which included analysing and enhancing existing manufacturing processes using Six Sigma methodology to improve operational efficiency, quality across divisions and process optimisation.</li>
         </p>
         <a href="index.html">Back to homepage</a>
-
-        
       </section>
 
-      <!-- //  PROJECTS  // -->
-      <section class="resume-section">
-        
-        <h2>Projects</h2>
-        <p>Below are some of the projects I have developed to apply and strengthen my skills in Python, web development, and CSS. These projects demonstrate hands-on experience with real-world applications, responsive design, and modern development practices.</p>
+      <!-- //  DELIVERABLES (replacing Projects)  // -->
+      <section class="resume-section" id="deliverables">
+        <h2>Deliverables (All Inline)</h2>
+        <p class="muted">
+          Replace the demo file paths with your files inside <code>/docs</code> and <code>/images</code>.
+          If using Google Drive, use the <em>preview</em> URL inside the iframes
+          (<code>https://drive.google.com/file/d/FILE_ID/preview</code>).
+        </p>
 
-        
-        <div class="project-wrapper">
-          <section class="project-item">
-            <img src="images/project-blog.JPG" srcset="images/project-blog - copy.JPG 2x" alt="Developed by Asith Blog post website with users" width="" height="">
-            <h3>Blog Website with User Authentication</h3>
-            <p>
-              <li>Objective: To design and develop a web-based blog application using Python and Flask, allowing users to manage blog posts securely.</li>
-              <li>Outcome: Successfully created a fully functional blog website with secure user authentication and blog management features. Demonstrated full-stack development skills and strengthened knowledge of database integration and web security practices.</li>
-            </p>
-            <!-- link to project -->
-            <a class="btn" href="DyeProcessMap.pdf">View Work</a>
-          </section>
-          <section class="project-item">
-            <img src="images/project-tic-tac-toe.JPG" srcset="images/project-tic-tac-toe.JPG 2x" alt="Developed by Asith Blog post website with users" width="" height="">
-            <h3>TIC-TAC-TOE GAME</h3>
-            <p>
-              <li>Objective: To design and implement a command-line Python-based Tic-Tac-Toe game for two players.</li>
-              <li>Outcome: Developed an engaging two-player game that runs smoothly in a command-line interface. Improved algorithmic thinking, game logic implementation, and enhanced Python programming skills.</li>
-            </p>
-            <!-- link to project -->
-            <a class="btn" href="#" target="_blank">View Work</a>
-          </section>
-        </div>
-        
+        <!-- SRS -->
+        <section class="deliverable-card">
+          <h3>📑 Software Requirements Specification (SRS)</h3>
+          <div class="embed-wrap">
+            <iframe
+              src="docs/sample-srs.pdf#view=FitH"
+              title="SRS Document"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <p><a class="btn btn-link" href="docs/sample-srs.pdf" target="_blank">Download SRS (PDF)</a></p>
+        </section>
+
+        <!-- FRD -->
+        <section class="deliverable-card">
+          <h3>📘 Functional Requirements Document (FRD)</h3>
+          <div class="embed-wrap">
+            <iframe
+              src="docs/sample-frd.pdf#view=FitH"
+              title="FRD Document"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <p><a class="btn btn-link" href="docs/sample-frd.pdf" target="_blank">Download FRD (PDF)</a></p>
+        </section>
+
+        <!-- Process Maps -->
+        <section class="deliverable-card">
+          <h3>🖼️ Process Maps (As-Is → To-Be)</h3>
+          <div class="embed-wrap">
+            <iframe
+              src="docs/process-maps.pdf#view=FitH"
+              title="Process Maps"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="gallery">
+            <img src="images/process-as-is.png" alt="As-Is Process" />
+            <img src="images/process-to-be.png" alt="To-Be Process" />
+          </div>
+          <p><a class="btn btn-link" href="docs/process-maps.pdf" target="_blank">Download Process Maps (PDF)</a></p>
+        </section>
+
+        <!-- Jira -->
+        <section class="deliverable-card">
+          <h3>📋 Jira Showcase (Mock Project)</h3>
+          <p class="muted">Backlog, Board, and Epics → Stories (dummy data, confidentiality-safe).</p>
+          <div class="gallery">
+            <img src="images/jira-backlog.png" alt="Jira Backlog" />
+            <img src="images/jira-board.png" alt="Jira Board" />
+            <img src="images/jira-epic.png" alt="Jira Epics & Stories" />
+          </div>
+        </section>
+
+        <!-- Confluence -->
+        <section class="deliverable-card">
+          <h3>📂 Confluence Example Page</h3>
+          <div class="embed-wrap">
+            <iframe
+              src="docs/confluence-sample.pdf#view=FitH"
+              title="Confluence Page"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <p><a class="btn btn-link" href="docs/confluence-sample.pdf" target="_blank">Download Confluence Sample (PDF)</a></p>
+        </section>
       </section>
 
       <!-- //  WORK EXPERIENCE  // -->
       <section class="resume-section">
-        
         <h2>Work Experience</h2>
-        <p>I gained valuable hands-on experience by applying my skills in real-world settings, working collaboratively with teams, meeting project deadlines, and adapting to new challenges. This helped me strengthen my problem-solving abilities, communication skills, and professional work ethic.</p>
+        <p>
+          I gained valuable hands-on experience by applying my skills in real-world settings, working collaboratively with teams, meeting project deadlines, and adapting to new challenges. This helped me strengthen my problem-solving abilities, communication skills, and professional work ethic.
+        </p>
 
         <section class="work-item">
           <div class="work-details">
@@ -83,16 +142,14 @@
             <p>2025-Present</p>
           </div>
           <div class="work-summary">
-            <!-- <p>Job summary</p> -->
             <p>Responsibilities:</p>
             <ul>
-              <li>Coordinating cross-functional teams, managing Agile/Scrum project timelines and workflows using Jira.
-              </li>
-              <li>Delivering structured documentation using Confluence, including process flows (UML/BPMN), data analysis (SQL, Excel), and requirements traceability to support software delivery.
-              </li>
+              <li>Coordinating cross-functional teams, managing Agile/Scrum project timelines and workflows using Jira.</li>
+              <li>Delivering structured documentation using Confluence, including process flows (UML/BPMN), data analysis (SQL, Excel), and requirements traceability to support software delivery.</li>
             </ul>
           </div>
         </section>
+
         <section class="work-item">
           <div class="work-details">
             <h3>IT Business Analyst</h3>
@@ -100,44 +157,19 @@
             <p>2017-2021</p>
           </div>
           <div class="work-summary">
-            <!-- <p>Job summary</p> -->
             <p>Responsibilities:</p>
             <ul>
-              <li>Conducting interviews, workshops, and system walkthroughs to gather and document existing business processes, system integrations, reporting needs, and workflow requirements.
-              </li>
-              <li>Creating detailed Functional Requirement Documents (FRDS) including to-be process maps, system screens, report templates, and workflow diagrams using tools like Bizagi Modeller, FreeMind, Draw.io, MS Word, and Excel.
-              </li>
-              <li>Facilitating user review sessions to validate requirements, incorporate feedback, and secure formal sign-off before transitioning documents to ERP developers.
-              </li>
+              <li>Conducting interviews, workshops, and system walkthroughs to gather and document existing business processes, system integrations, reporting needs, and workflow requirements.</li>
+              <li>Creating detailed Functional Requirement Documents (FRDS) including to-be process maps, system screens, report templates, and workflow diagrams using tools like Bizagi Modeller, FreeMind, Draw.io, MS Word, and Excel.</li>
+              <li>Facilitating user review sessions to validate requirements, incorporate feedback, and secure formal sign-off before transitioning documents to ERP developers.</li>
               <li>Leading a lean manufacturing initiative by analysing workflows, creating value stream maps (VSMS), identifying efficiency gaps, and presenting process improvements for top management approval.</li>
             </ul>
           </div>
         </section>
-        <!-- <section class="work-item">
-          <div class="work-details">
-            <h3>Job title</h3>
-            <p>Company Name</p>
-            <p>Date at job</p>
-          </div>
-          <div class="work-summary">
-            <p>Job summary goes here. Add as many paragraphs as you need.</p>
-            <p>Optional list:</p>
-            <ul>
-              <li>Delete this list if you don't need it.</li>
-              <li>Created...</li>
-              <li>Lead...</li>
-              <li>Responsible for...</li>
-            </ul>
-          </div>
-          
-        </section> -->
-
-        
       </section>
 
       <!-- //  EDUCATION & CERTIFICATIONS  // -->
       <section class="resume-section">
-        
         <h2>Education</h2>
 
         <section class="education-item">
@@ -145,32 +177,30 @@
           <p>Bachelor of Science , 2016</p>
           <p>Computer Science, Mathematics and Physics.</p>
         </section>
+
         <section class="education-item">
           <h3>Udemy</h3>
           <p>Certificate of Completion, 2024</p>
           <p>100 Days of Code: Complete Python Pro Bootcamp.</p>
         </section>
-
-      
       </section>
-
     </main>
 
     <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
     <footer>
-      
       <p>2025 by asith_hewadewage | <a href="mailto:lordasith28@gmail.com">contact me</a></p>
-
-      
       <ul class="socials">
         <li>
-          <a href="https://www.facebook.com/" target="_blank"><img src="images/icon-logo-linkedin.png" alt="linkedin icon"></a>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="images/icon-logo-linkedin.png" alt="linkedin icon"
+          /></a>
         </li>
         <li>
-          <a href="https://www.youtube.com/" target="_blank"><img src="images/icon-github.png" alt="github icon"></a>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><img src="images/icon-github.png" alt="github icon"
+          /></a>
         </li>
       </ul>
-      
     </footer>
   </body>
 </html>
